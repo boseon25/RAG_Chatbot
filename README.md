@@ -165,9 +165,9 @@ def ask_rag(query: str, embedder, top_k: int = 3):
     return ask_ollama(prompt)
 ```
 
-## ? Quick Start
+## Quick Start
 
-### 1?? Prerequisites
+### 1. Prerequisites
 
 ```bash
 # Python 3.8+ ÇÊ¿ä
