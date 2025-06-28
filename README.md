@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
   <img src="https://img.shields.io/badge/LangChain-Community-orange" alt="LangChain">
   <img src="https://img.shields.io/badge/BGE--M3-Embedding-purple" alt="BGE-M3">
   <img src="https://img.shields.io/badge/FAISS-VectorDB-red" alt="FAISS">
@@ -12,7 +11,7 @@
 <br>
 
 <div align="center">
-  <p><strong>? 완전 로컬 실행 가능한 교육용 RAG(Retrieval-Augmented Generation) 챗봇</strong></p>
+  <p><strong>완전 로컬 실행 가능한 교육용 RAG(Retrieval-Augmented Generation) 챗봇</strong></p>
   <p>BGE-M3 임베딩 + FAISS 벡터 검색 + Ollama-Exaone3.5 언어모델을 활용한 한국어 문서 기반 질의응답 시스템</p>
 </div>
 
