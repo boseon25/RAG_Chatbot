@@ -35,14 +35,15 @@ def ask_ollama(prompt: str, model: str = MODEL_NAME, max_tokens: int = 512):
 
 
 # RAG 파이프라인
-def ask_rag(query: str, top_k:int = 3):
-    # 검색
-    db   = FAISS.load_local(INDEX_DIR, emb_wrapper,
-                            allow_dangerous_deserialization=True)
-    docs = db.similarity_search(query, k=top_k)
-    context = "\n\n".join(d.page_content[:800] for d in docs)   # 과도한 길이 방지
+# qa.py
+def ask_rag(query: str, embedder, top_k: int = 3):
+    from retriever import INDEX_DIR
+    from langchain_community.vectorstores import FAISS
 
-    # 지시어가 있는 프롬프트
+    db = FAISS.load_local(INDEX_DIR, embedder, allow_dangerous_deserialization=True)
+    docs = db.similarity_search(query, k=top_k)
+    context = "\n\n".join(d.page_content[:800] for d in docs)
+
     prompt = f"""아래 [문서] 내용에 근거해서만 한국어로 답하라.
 문서에 정보가 없으면 '모르겠습니다'라고 답하라.
 
@@ -54,5 +55,4 @@ def ask_rag(query: str, top_k:int = 3):
 
 [답변]"""
 
-    # LLM 호출
     return ask_ollama(prompt)
