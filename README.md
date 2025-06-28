@@ -20,16 +20,16 @@
 
 ## Table of Contents
 
-- [? Features](#-features)
-- [?? Architecture](#?-architecture)
-- [? Project Structure](#-project-structure)
-- [? Quick Start](#-quick-start)
-- [? Usage](#-usage)
-- [? Dataset](#-dataset)
-- [?? Configuration](#?-configuration)
-- [?? Development](#?-development)
-- [? Contributing](#-contributing)
-- [? License](#-license)
+- [Features](#-features)
+- [Architecture](#?-architecture)
+- [Project Structure](#-project-structure)
+- [Quick Start](#-quick-start)
+- [Usage](#-usage)
+- [Dataset](#-dataset)
+- [Configuration](#?-configuration)
+- [Development](#?-development)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## Features
 
