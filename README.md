@@ -358,16 +358,6 @@ ask_rag("정보통신 윤리 교육 시간은?", embedder)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### Development Guidelines
-
-- 코드 스타일: PEP 8 준수
-- 커밋 메시지: 영어로 명확하게 작성
-- 문서화: 주요 함수에 docstring 작성
-- 테스트: 새 기능 추가 시 테스트 코드 포함
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -380,10 +370,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Made with ?? for Korean Education</p>
+  <p>Made with for Korean Education</p>
   <p>
-    <a href="#-table-of-contents">Back to Top</a> ?
-    <a href="https://github.com/yourusername/RAG_Chatbot/issues">Report Bug</a> ?
+    <a href="#-table-of-contents">Back to Top</a> 
+    <a href="https://github.com/yourusername/RAG_Chatbot/issues">Report Bug</a> 
     <a href="https://github.com/yourusername/RAG_Chatbot/issues">Request Feature</a>
   </p>
 </div>
