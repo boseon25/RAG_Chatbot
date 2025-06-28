@@ -68,6 +68,7 @@ RAG_Chatbot/
 ├── main.py                # 메인 실행 스크립트
 ├── run_ollama.sh          # Ollama 설치 및 설정 스크립트
 ├── rag_final.ipynb        # Jupyter 노트북 (개발/테스트용)
+├── requirements.txt       # Python 의존성 패키지 목록
 ├── pdf/                   # PDF 문서 저장 폴더
 │   ├── 2022개정교육과정자유학기운영안내서.pdf
 │   ├── 2025년학생안전종합계획(발송용).pdf
@@ -76,6 +77,9 @@ RAG_Chatbot/
 │   ├── 2025중등교원인사업무처리요령2권.pdf
 │   ├── [계획]2025정보통신윤리교육및인터넷스마트폰과의존예방교육기본계획.pdf
 │   └── 학교안전계획직무연수교재(최종).pdf
+├── images/                # README용 이미지 파일
+│   ├── document_source.png    # 원본 문서 스크린샷
+│   └── rag_response.png       # RAG 답변 결과 스크린샷
 ├── faiss_bge_m3_index/    # FAISS 벡터 인덱스 (자동 생성)
 └── __pycache__/           # Python 캐시 파일
 ```
@@ -227,6 +231,25 @@ answer = ask_rag(question, embedder)
 
 print(f"Q: {question}")
 print(f"A: {answer}")
+```
+
+#### ? 실제 동작 결과
+
+**1. 원본 문서 내용**
+
+시스템이 검색한 PDF 문서의 실제 내용입니다:
+
+![문서 원본 내용](./images/문서내의답.png)
+
+*? 2025년학생안전종합계획 문서에서 "학교안전사고 예방·관리 체계의 고도화" 과제에 대한 담당부서(학교안전과)와 연락처(239-0841) 정보*
+
+**2. RAG 시스템의 답변 결과**
+
+![RAG 답변 결과](./images/질문에대한답이문서내에있을때.png)
+
+*? BGE-M3 임베딩과 FAISS 검색을 통해 문서에서 정확한 정보를 찾아 제공한 답변*
+
+> **? 검증 결과**: RAG 시스템이 PDF 문서에서 정확한 담당부서(학교안전과)와 연락처(239-0841)를 성공적으로 추출하여 답변했습니다.
 ```
 
 ### Jupyter Notebook
